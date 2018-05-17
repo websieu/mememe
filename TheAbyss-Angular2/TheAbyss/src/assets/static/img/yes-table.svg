@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd' [
+		<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+		<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+		<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+		<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+		<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+		<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+		<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+		<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+		]>
+<svg enable-background="new 0 0 14.8 14.8" version="1.1" viewBox="0 0 14.8 14.8" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#b);stroke-miterlimit:10;}
+	.st1{fill:none;stroke:url(#a);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<switch>
+	<foreignObject width="1" height="1" requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/">
+	</foreignObject>
+	<g>
+				<linearGradient id="b" x1="2.2005" x2="12.618" y1="-861.8" y2="-851.38" gradientTransform="translate(0 864)" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#CBFF00" offset="0"/>
+				<stop stop-color="#BEFD00" offset=".1076"/>
+				<stop stop-color="#9CF900" offset=".3066"/>
+				<stop stop-color="#65F200" offset=".575"/>
+				<stop stop-color="#19E900" offset=".8993"/>
+				<stop stop-color="#00E600" offset="1"/>
+			</linearGradient>
+			<circle class="st0" cx="7.4" cy="7.4" r="6.9"/>
+				<linearGradient id="a" x1="5.7163" x2="8.9785" y1="-859.08" y2="-855.82" gradientTransform="translate(0 864)" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#CBFF00" offset="0"/>
+				<stop stop-color="#BEFD00" offset=".1076"/>
+				<stop stop-color="#9CF900" offset=".3066"/>
+				<stop stop-color="#65F200" offset=".575"/>
+				<stop stop-color="#19E900" offset=".8993"/>
+				<stop stop-color="#00E600" offset="1"/>
+			</linearGradient>
+			<polyline class="st1" points="10.1 5.6 6.4 9.3 4.6 7.5"/>
+	</g>
+</switch>
+</svg>

@@ -1,0 +1,52 @@
+1. How to install angualar2 for project
+    cd /home/fcode4/Documents/MyCode/TheAbyss-Angular2
+    sudo npm install -g @angular/cli
+    ng new TheAbyss    
+    
+2. How to run app
+    cd /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss 
+    ng serve --port 4444
+
+3. Reinstall
+    cd /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss 
+    sudo rm -rf node_modules
+    sudo npm cache clean --force
+    sudo npm install -g @angular/cli
+    sudo npm install
+
+4. Save file
+
+    sudo wget  -P /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/assets/static/fonts/ "https://cdn.theabyss.com/static/fonts/ubuntu-v11-latin_cyrillic-ext-regular.woff2"
+
+5. Convert base64 to png
+    base64 -d <<< "" > /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/assets/static/image/image8.png
+
+    background-image: url("assets/static/image/image8.png");
+
+ /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/assets/static/img/appstore-2.png
+
+ /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/assets/static/img/benefits.png
+
+ ../assets/
+
+5.Run with hostname
+
+	ng serve --host 192.168.1.9 --port 4444  --public-host mytheabyss.thu --disableHostCheck true 
+
+
+
+ng generate class Hero
+ng generate component HeroForm
+
+6. Create new component
+	touch /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/app/component/account.component.ts
+	touch /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/app/html/account.component.html
+	touch /home/fcode4/Documents/MyCode/TheAbyss-Angular2/TheAbyss/src/app/css/account.component.css
+
+
+	
+
+    
+
+    
+    

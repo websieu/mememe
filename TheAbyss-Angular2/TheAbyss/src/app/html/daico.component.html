@@ -1,0 +1,914 @@
+<body class="fp-viewing-0" style="overflow: visible; height: initial;">
+    <!-- <link rel="stylesheet" href="https://cdn.theabyss.com/static/css/all.css?20180512T015004"> -->
+    <div id="loading" style="display: none;">
+        <div class="triangle-wrapper">
+            <div class="triangle triangle-1">
+                <svg class="triangle-svg" viewBox="0 0 140 141">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="triangle triangle-2">
+                <svg class="triangle-svg" viewBox="0 0 140 141">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="triangle triangle-3">
+                <svg class="triangle-svg" viewBox="0 0 140 141">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="triangle triangle-4">
+                <svg class="triangle-svg" viewBox="0 0 140 141">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <div class="triangle triangle-5">
+                <svg class="triangle-svg" viewBox="0 0 140 141">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <polygon class="triangle-polygon" points="70 6 136 138 4 138"></polygon>
+                    </g>
+                </svg>
+            </div>
+            <p class="triangle-loading">Loading</p>
+        </div>
+    </div>
+    <div class="mouse-scroll" style="display: none;">
+        <img src="../assets/static/img/prototype/mouse.svg" alt="">
+    </div>
+    <script>
+        (function () {
+            var $triangles = document.querySelectorAll('.triangle');
+            var template = '<svg class="triangle-svg" viewBox="0 0 140 141">\n    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n      <polygon class="triangle-polygon"  points="70 6 136 138 4 138"></polygon>\n    </g>\n  </svg>';
+            Array.prototype.forEach.call($triangles, function ($triangle, index) {
+                $triangle.innerHTML = template;
+            });
+        })();
+    </script>
+
+
+    <div id="up-sidenav" style="display: block;">
+        <div class="social"></div>
+    </div>
+    <div id="header">
+        <input id="burger" type="checkbox">
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <div class="left">
+
+
+
+                <ul class="languages">
+
+                    <li>
+                        <a href="/vi/daico">
+                            <img src="../assets/static/img/langs/vi.png" alt="">
+                            <span>Tiếng Việt</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/ko/daico">
+                            <img src="../assets/static/img/langs/ko.png" alt="">
+                            <span>한국어</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/ja/daico">
+                            <img src="../assets/static/img/langs/ja.png" alt="">
+                            <span>日本語</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/ru/daico">
+                            <img src="../assets/static/img/langs/ru.png" alt="">
+                            <span>Русский</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/zh/daico">
+                            <img src="../assets/static/img/langs/zh.png" alt="">
+                            <span>中文</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="bottom">
+                    <ul class="links">
+                        <li>
+                            <a href="http://support.theabyss.com" target="_blank">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="https://theabyss.docsend.com/view/xksf67v" target="_blank">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://theabyss.docsend.com/view/v6jdq5x" target="_blank">KYC/AML Policy</a>
+                        </li>
+                    </ul>
+                    <p>
+                        Copyright © 2018
+                        <br> The Abyss LTD incorporated in Malta, registration No.С 85718, registered office at:
+                        <br> Orange Point Building, Second Floor, Dun Karm Street, Birkirkara By-Pass, Malta
+                        <br> All rights reserved
+                    </p>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="top">
+                    <a href="https://theabyss.docsend.com/view/nff9r2c" target="_blank" class="wp">Whitepaper</a>
+                    <ul class="login-block">
+
+                        <li class="lk-href">
+                            <a href="#" class="login login-btn modal-opener-btn" data-target="login-modal">Log In</a>
+                        </li>
+                        <li class="lk-href">
+                            <a href="#" class="register register-btn modal-opener-btn" data-target="register-modal">Sign Up</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="middle">
+                    <ul>
+                        <li>
+                            <a href="https://www.theabyss.com/">Token Sale</a>
+                        </li>
+                        <li>
+                            <a href="/faq">F.A.Q.</a>
+                        </li>
+                        <li>
+                            <a href="/referral-program">Referrals</a>
+                        </li>
+                        <li>
+                            <a href="/prototype">Prototype</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <ul class="social">
+                        <li>
+                            <a title="Telegram" target="_blank" href="https://telegram.theabyss.com" class="soc-6"></a>
+                        </li>
+                        <li>
+                            <a title="GitHub" target="_blank" href="https://github.com/theabyssportal" class="soc-9"></a>
+                        </li>
+                        <li>
+                            <a title="Discord" target="_blank" href="https://discord.theabyss.com" class="soc-10"></a>
+                        </li>
+                        <li>
+                            <a title="Twitter" target="_blank" href="https://twitter.com/theabyss" class="soc-1"></a>
+                        </li>
+                        <li>
+                            <a title="Facebook" target="_blank" href="https://www.facebook.com/theabyss/" class="soc-3"></a>
+                        </li>
+                        <li>
+                            <a title="Instagram" target="_blank" href="https://www.instagram.com/theabyssportal/" class="soc-15"></a>
+                        </li>
+                        <li>
+                            <a title="Medium" target="_blank" href="https://medium.com/theabyss" class="soc-4"></a>
+                        </li>
+                        <li>
+                            <a title="Linkedin" target="_blank" href="https://www.linkedin.com/company/theabyss/" class="soc-5"></a>
+                        </li>
+                        <li>
+                            <a title="bitcointalk" target="_blank" href="https://bitcointalk.theabyss.com/" class="soc-7"></a>
+                        </li>
+                        <li>
+                            <a title="Reddit" target="_blank" href="https://www.reddit.com/r/theabyssplatform/" class="soc-12"></a>
+                        </li>
+                        <li>
+                            <a title="Vimeo" target="_blank" href="https://vimeo.com/theabyss" class="soc-14"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="copy-mob">
+                Copyright © 2018
+                <br> The Abyss LTD incorporated in Malta, registration No.С 85718, registered office at:
+                <br> Orange Point Building, Second Floor, Dun Karm Street, Birkirkara By-Pass, Malta
+                <br> All rights reserved
+            </p>
+        </nav>
+
+
+    </div>
+
+    <div id="fullpage" class="fullpage-wrapper" style="height: 100%; position: relative;">
+        <div class="section section1 fp-section fp-table active fp-completely" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half left">
+                    <h1>
+                        Introducing
+                        <span class="da">DA</span>ICO
+                    </h1>
+                    <div class="text">
+                        DAICO is an innovative fundraising model that merges some of the benefits of Decentralized Autonomous Organizations (DAOs),
+                        aimed at upgrading and making the initial ICO concept more transparent and secure. DAICO model allows
+                        token holders to control the withdrawal of the funds, also providing an option to vote for refund
+                        of the remaining contributed money in case the team fails to implement the project.
+                    </div>
+                    <div class="btns">
+                        <a class="btn" href="https://www.theabyss.com/">Join now</a>
+                        <a class="btn empty" href="https://ethresear.ch/t/explanation-of-daicos/465" target="_blank">Read more</a>
+                        <a href="#" class="video mob video-open-btn" data-target="">
+                            <span class="planet1"></span>
+                            <span class="planet2"></span>
+                            <span class="planet3"></span>
+                            <span class="text">Watch the video</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-half img right" style="position: relative;">
+
+                    <a href="#" class="video dt video-open-btn" data-target="">
+                        <span class="planet1"></span>
+                        <span class="planet2"></span>
+                        <span class="planet3"></span>
+                        <span class="text">Watch the video</span>
+                    </a>
+                    <!-- video -->
+                    <div class="video-wrapper  dt" style="display: none;">
+                        <div class="frame ">
+                            <div class="close-video">
+                                <div class="icon">+</div>
+                            </div>
+
+                            <iframe class="" src="https://player.vimeo.com/video/256289110" width="640" height="360" frameborder="0" webkitallowfullscreen=""
+                                mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="video-wrapper  mob" style="display: none;">
+                        <div class="frame ">
+                            <div class="close-video">
+                                <div class="icon">+</div>
+                            </div>
+                            <iframe src="https://player.vimeo.com/video/256289110" width="300" height="169" frameborder="0" webkitallowfullscreen=""
+                                mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+                        </div>
+                    </div>
+                    <div class="animation">
+                        <img class="base svg" src="https://cdn.theabyss.com/static/img/daico/first.svg?20180510T232701" alt="">
+                        <img class="base" src="https://cdn.theabyss.com/static/img/daico/first.png?20180510T232701" alt="">
+                        <img class="move bottom-1" src="https://cdn.theabyss.com/static/img/daico/1-bottom.png?20180510T232701" alt="">
+                        <img class="move right-1" src="https://cdn.theabyss.com/static/img/daico/1-right.png?20180510T232701" alt="">
+                        <img class="move left-1" src="https://cdn.theabyss.com/static/img/daico/1-left.png?20180510T232701" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section2 fp-section fp-table" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half red">
+                    <div class="item">
+                        <h3>Disadvantages of
+                            <span class="no-wrap">an ICO</span>
+                        </h3>
+                    </div>
+                    <div class="item left-1">
+                        <div class="animation">
+                            <img class="base" src="https://cdn.theabyss.com/static/img/daico/dis-3-base.png?20180510T232701" alt="">
+                            <img class="move" src="https://cdn.theabyss.com/static/img/daico/dis-3-base.png?20180510T232701" alt="">
+                        </div>
+
+                        <p>Once the crowdsale period finishes, developers have complete access to all the contributed funds.
+                            Developers thus create the danger of scam for contributors.</p>
+                    </div>
+                    <div class="item left-2">
+                        <div class="animation">
+                            <img class="base" src="https://cdn.theabyss.com/static/img/daico/dis-2.png?20180510T232701" alt="">
+                            <img class="move box" src="https://cdn.theabyss.com/static/img/daico/left-2-box.png?20180510T232701" alt="">
+                            <img class="move question" src="https://cdn.theabyss.com/static/img/daico/left-2-question.png?20180510T232701" alt="">
+                            <img class="move light" src="https://cdn.theabyss.com/static/img/daico/left-2-light.png?20180510T232701" alt="">
+                        </div>
+
+                        <p>After the end of crowdsale, when tens of millions of dollars are already collected, the team suffers
+                            deterioration in its motivation to implement the project.</p>
+                    </div>
+                    <div class="item left-3">
+                        <div class="animation">
+                            <img class="base svg" src="https://cdn.theabyss.com/static/img/daico/2-3-man.svg?20180510T232701" alt="">
+                            <img class="move back" src="https://cdn.theabyss.com/static/img/daico/right-1-back-hand.png?20180510T232701" alt="">
+                            <img class="move body" src="https://cdn.theabyss.com/static/img/daico/right-1-body.png?20180510T232701" alt="">
+                            <img class="move coin" src="https://cdn.theabyss.com/static/img/daico/man-coins.png?20180510T232701" alt="">
+                            <img class="move hand" src="https://cdn.theabyss.com/static/img/daico/right-1-hand.png?20180510T232701" alt="">
+                        </div>
+                        <p>Centralized raising of funds that contradicts the very spirit and nature of crypto industry. The
+                            crowdsale conditions are obscure.</p>
+                    </div>
+                </div>
+                <div class="content-half">
+                    <div class="item">
+                        <h3>Benefits of
+                            <span class="da">DA</span>ICO</h3>
+                    </div>
+                    <div class="item right-1">
+                        <div class="animation">
+                            <img class="base svg" src="https://cdn.theabyss.com/static/img/daico/2-6.svg?20180510T232701" alt="">
+                            <img class="base" src="https://cdn.theabyss.com/static/img/daico/adv-3-base.png?20180510T232701" alt="">
+                            <img class="move all" src="https://cdn.theabyss.com/static/img/daico/adv-3.png?20180510T232701" alt="">
+                            <img class="move hand" src="https://cdn.theabyss.com/static/img/daico/right-3-hand.png?20180510T232701" alt="">
+                        </div>
+                        <p>If token holders are disappointed with the project’s progress, they can set the contract to withdraw
+                            and get a refund. This protects token holders from scam.</p>
+                    </div>
+                    <div class="item right-2">
+
+                        <div class="animation">
+                            <img class="base" src="https://cdn.theabyss.com/static/img/daico/dis-1.png?20180510T232701" alt="">
+                            <img class="move coin coin-1" src="https://cdn.theabyss.com/static/img/daico/2-1-coin.png?20180510T232701" alt="">
+                            <img class="move coin coin-2" src="https://cdn.theabyss.com/static/img/daico/2-1-coin.png?20180510T232701" alt="">
+                            <img class="move coin coin-3" src="https://cdn.theabyss.com/static/img/daico/2-1-coin.png?20180510T232701" alt="">
+                            <img class="move coin coin-4" src="https://cdn.theabyss.com/static/img/daico/2-1-coin.png?20180510T232701" alt="">
+                            <img class="move crane" src="https://cdn.theabyss.com/static/img/daico/2-1-crane.png?20180510T232701" alt="">
+
+                        </div>
+                        <p>Funding is not released in a lump sum, but a mechanism is implemented to spread it over time. This
+                            increases and sustains the team's motivation to deliver a product.</p>
+                    </div>
+                    <div class="item right-3">
+                        <div class="animation">
+                            <img class="base" src="https://cdn.theabyss.com/static/img/daico/adv-2-base.png?20180510T232701" alt="">
+                            <img class="move wallet" src="https://cdn.theabyss.com/static/img/daico/adv-2.png?20180510T232701" alt="">
+                            <img class="move arrow" src="https://cdn.theabyss.com/static/img/daico/right-2-arrow.png?20180510T232701" alt="">
+                        </div>
+                        <p>With DAICO, the raised funds are safely stored in a decentralized manner. The crowdsale conditions
+                            are completely transparent and hard coded in the smart contract.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section3 fp-section fp-table" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half left">
+                    <h3>What are the main characteristics of
+                        <span class="no-wrap">The Abyss
+                            <span class="da">DA</span>ICO?</span>
+                    </h3>
+                    <div class="text">
+                        The Abyss, the next-generation digital distribution platform based on a crypto reward ecosystem, has conducted the world’s
+                        first DAICO with the following features:
+                    </div>
+                    <ul>
+                        <li>Token holders can initiate the poll on tap increase or refund;</li>
+                        <li>Only token holders can vote using tokens on their ETH wallets (tokens held by project developers
+                            are not eligible to vote with);</li>
+                        <li>Prevention protocols are included to protect against abuse by large token holders like exchanges;</li>
+                        <li>The weight of each vote is limited by a certain amount of tokens.</li>
+                    </ul>
+
+                </div>
+                <div class="content-half img right">
+                    <div class="animation">
+                        <img class="base svg" src="https://cdn.theabyss.com/static/img/daico/third.svg?20180510T232701" alt="">
+                        <img class="base" src="https://cdn.theabyss.com/static/img/daico/third.png?20180510T232701" alt="">
+                        <img class="move shadow" src="https://cdn.theabyss.com/static/img/daico/3-big-shadow.png?20180510T232701" alt="">
+                        <img class="move small" src="https://cdn.theabyss.com/static/img/daico/3-small-cubes.png?20180510T232701" alt="">
+                        <img class="move small-lights" src="https://cdn.theabyss.com/static/img/daico/3-cubes-lights.png?20180510T232701" alt="">
+
+                        <div class="move cube">
+
+                            <img class="move big" src="https://cdn.theabyss.com/static/img/daico/3-big-cube.png?20180510T232701" alt="">
+                            <img class="move big-lines" src="https://cdn.theabyss.com/static/img/daico/3-big-lines.png?20180510T232701" alt="">
+                            <img class="move big-light" src="https://cdn.theabyss.com/static/img/daico/3-big-light.png?20180510T232701" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="section section5 fp-section fp-table" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half left">
+                    <h3>The Tap Poll</h3>
+                    <ul>
+                        <li>The initial tap in Smart Contract is set to 500 ETH monthly and can be increased by the Tap Poll;</li>
+                        <li>Voting for tap increase can be held on 10th day of each month;</li>
+                        <li>Voting starts immediately after initiation and lasts 3 days;</li>
+                        <li>Maximum tap increase is limited to 50% (of the initial tap amount) at a time.</li>
+
+                    </ul>
+
+                </div>
+                <div class="content-half img right">
+                    <div class="animation">
+                        <img class=" " src="https://cdn.theabyss.com/static/img/daico/tap-voting.svg?20180510T232701" alt="">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="section section4 fp-section fp-table" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half img">
+                    <div class="animation">
+                        <img class="base svg" src="https://cdn.theabyss.com/static/img/daico/fourth.svg?20180510T232701" alt="">
+                        <img class="base" src="https://cdn.theabyss.com/static/img/daico/fourth.png?20180510T232701" alt="">
+                        <div class="robot move">
+                            <img class="platform move" src="https://cdn.theabyss.com/static/img/daico/4-robot.png?20180510T232701" alt="">
+                            <img class="anthenn move" src="https://cdn.theabyss.com/static/img/daico/4-anthenn.png?20180510T232701" alt="">
+                            <img class="robo-lights move" src="https://cdn.theabyss.com/static/img/daico/4-robot-lights.png?20180510T232701" alt="">
+
+                        </div>
+                        <div class="small-cubes move">
+                            <img class="cubes move" src="https://cdn.theabyss.com/static/img/daico/4-small-qubes.png?20180510T232701" alt="">
+                            <img class="tv-light move" src="https://cdn.theabyss.com/static/img/daico/4-tv-light.png?20180510T232701" alt="">
+
+                        </div>
+
+                        <div class="center move">
+                            <img class="platform move" src="https://cdn.theabyss.com/static/img/daico/4-big-center.png?20180510T232701" alt="">
+                            <img class="eth move" src="https://cdn.theabyss.com/static/img/daico/4-eth-coin.png?20180510T232701" alt="">
+                            <img class="abyss move" src="https://cdn.theabyss.com/static/img/daico/4-abyss-coin.png?20180510T232701" alt="">
+                            <img class="btc move" src="https://cdn.theabyss.com/static/img/daico/4-btc-coin.png?20180510T232701" alt="">
+                            <img class="eth-light move" src="https://cdn.theabyss.com/static/img/daico/4-left-light.png?20180510T232701" alt="">
+                            <img class="abyss-light move" src="https://cdn.theabyss.com/static/img/daico/4-center-light.png?20180510T232701" alt="">
+                            <img class="btc-light move" src="https://cdn.theabyss.com/static/img/daico/4-right-light.png?20180510T232701" alt="">
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="content-half">
+                    <h3>The Refund Poll</h3>
+                    <ul>
+                        <li>The refund poll can be summoned once a quarter: more specifically, on July 1, October 1, January
+                            1, April 1 of the respective year;</li>
+                        <li>Each token holder can initiate the refund poll. The voting starts immediately after initiation and
+                            lasts 1 week;</li>
+                        <li>The refund voting is considered a success if more than 1/3 of tokens (from total token supply) voted
+                            “YES”;
+                        </li>
+                        <li>If voting for refund is success, one more (controlling) voting for refund is carried out within a
+                            month. If situation is repeated, the DAICO smart contract is switched to refund mode returning
+                            the remaining contributed ETH to the token holders;</li>
+                        <li>The refund is available during 2 years (after the end of crowdsale), with the last refund voting
+                            starting on April 1, 2020.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section section6 fp-section fp-table" style="height: 925px;">
+            <div class="fp-tableCell" style="height: 925px;">
+                <div class="content-half">
+                    <h3 style="font-size: 40px">The Abyss
+                        <span class="da">DA</span>ICO Timeline</h3>
+                    <div class="block">
+                        <div class="item date date-1">
+                            <div class="title">April 18, 2018</div>
+                            <div class="name">
+                                The Start of Token Sale
+                            </div>
+                        </div>
+                        <div class="item date date-2">
+                            <div class="title">June 10, 2018</div>
+                            <div class="name">
+                                First Tap Poll
+                            </div>
+                        </div>
+                        <div class="item date date-3">
+                            <div class="title">May 16, 2018</div>
+                            <div class="name">
+                                The End of Token Sale
+                            </div>
+                        </div>
+                        <div class="item date date-4">
+                            <div class="title">July 1, 2018</div>
+                            <div class="name">
+                                First Refund Poll
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-half">
+                    <h3>
+                        <span class="da">DA</span>ICO Smart Contracts</h3>
+
+                    <div class="text">During The Abyss Token Sale (DAICO) the project utilizes five smart contracts:</div>
+
+                    <ul>
+                        <li>Crowdsale (
+                            <a href="https://etherscan.io/address/0xb84e224216fec19d8631a0ad187326bc48f91b6b#code" target="_blank">TheAbyssDAICO</a>) contract. This smart contract is meant for crowdsale and will not be used
+                            after the end of crowdsale;</li>
+                        <li>Fund (
+                            <a href="" target="_blank">PollManagedFund</a>) contract. This smart contract is meant for storing contributed ETH;</li>
+                        <li>Tokens (
+                            <a href="https://etherscan.io/address/0x0e8d6b471e332f140e7d9dbb99e5e3822f728da6#code" target="_blank">ABYSS</a>) contract. This is our main smart contract which will be operational after the end
+                            of crowdsale;</li>
+                        <li>Reservation Fund (
+                            <a href="https://etherscan.io/address/0x035611f47a13f3603109152952f0034c674959ba#code" target="_blank">ReservationFund</a>) contract. This smart contract is meant for storing ETH contributed by greylist
+                            participants;
+                        </li>
+                        <li>Utility contract (
+                            <a href="https://etherscan.io/address/0x20977c819a2a508fa636338aab39f41a4ddc8b04#code" target="_blank">LockedTokens</a>). This smart contract is meant for locking the Company’s, Reserve and Foundation
+                            tokens for a certain time period.</li>
+                    </ul>
+
+                    <div class="text small gh">
+                        <a target="_blank" href="https://github.com/theabyssportal">DAICO Smart Contract Sources</a>
+                    </div>
+                    <div class="text small">
+                        <a target="_blank" href="https://medium.com/theabyss/the-abyss-daico-voting-system-explainer-c6ae140bbf4">How to Vote</a>
+                    </div>
+                    <div class="text small">
+                        <a target="_blank" href="https://medium.com/theabyss/a-guide-to-the-abyss-daico-smart-contract-b66a04bddaa">A Complete Guide to The Abyss DAICO Smart Contract</a>
+                    </div>
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- login -->
+    <div id="login-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Log In</div>
+            <div class="beware-block">
+                Please check that you are visiting
+                <br>
+                <b>https://www.theabyss.com</b>
+                <div class="beware-block-image"></div>
+            </div>
+            <form action="/api/user/login" method="POST" class="login-form">
+                <input name="email" type="email" required="required" placeholder="Email">
+                <div class="hidden-alert wrong_email_format" data-for="email" style="visibility: hidden; display: none;">Wrong email format</div>
+
+                <input name="password" type="password" required="required" placeholder="Password">
+                <div class="hidden-alert password_data_required" data-for="password" style="visibility: hidden; display: none;">Please input your password</div>
+
+                <label class="check">
+                    <input name="remember_me" value="y" type="checkbox" checked="true">
+                    <span class="checkmark"></span>
+                    Keep me signed in
+                </label>
+                <div class="recaptcha" data-force="true" style="margin-top: 20px;">
+                    <div style="width: 304px; height: 78px;">
+                        <div>
+                            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcWKD0UAAAAALLZHrZB5mTQwebvjKS4bKlNYtoe&amp;co=aHR0cHM6Ly93d3cudGhlYWJ5c3MuY29tOjQ0Mw..&amp;hl=en&amp;v=v1525674693836&amp;theme=light&amp;size=normal&amp;cb=efvphqaccn1"
+                                width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div>
+                        <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+                    </div>
+                </div>
+
+                <div class="hidden-alert bad_email_or_password" data-for="general" style="visibility: hidden; display: none;">Incorrect login or password</div>
+                <div class="hidden-alert user_not_activated" data-for="general" style="visibility: hidden; display: none;">User has not been activated, please check your email</div>
+                <div class="hidden-alert user_blocked" data-for="general" style="visibility: hidden; display: none;">User blocked, sorry</div>
+                <div class="hidden-alert csrf_error" data-for="general" style="visibility: hidden; display: none;">The CSRF token is missing or incorrect.</div>
+                <div class="hidden-alert xhr_required" data-for="general" style="visibility: hidden; display: none;">Incorrect XHR request.</div>
+                <div class="hidden-alert" data-for="default" style="visibility: hidden; display: none;">Something went wrong, please try again later</div>
+
+                <input name="csrf_token" value="IjkyYzc1MGU2NjhkNWY0YjA3YzBmMWQzYWQzMjJlNzYxN2M1NzY2OTgi.DdqCAw.jkTo6KhEdLF3fScHFrykf8dQ_Yw"
+                    type="hidden">
+                <button>Log In</button>
+
+
+            </form>
+            <div class="text remember">
+                <a href="#" class="modal-opener-btn" data-target="password-reset-modal">Forgot your password?</a>
+            </div>
+            <div class="text">
+                Do not have The Abyss account?
+                <a href="#" class="modal-opener-btn" data-target="register-modal">Sign&nbsp;Up</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- registration -->
+    <div id="register-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Registration</div>
+            <div class="beware-block">
+                Please check that you are visiting
+                <br>
+                <b>https://www.theabyss.com</b>
+                <div class="beware-block-image"></div>
+            </div>
+            <form action="/api/user/register" method="POST" class="register-form">
+                <input name="email" type="email" required="required" placeholder="Email">
+                <div class="hidden-alert wrong_email_format" data-for="email" style="visibility: hidden; display: none;">Wrong email format</div>
+
+                <input name="password" type="password" required="required" placeholder="Create password (min 8 characters)">
+                <div class="hidden-alert weak_password" data-for="password" style="visibility: hidden; display: none;">Password must be at least 8 symbols long, containing digits and letters</div>
+                <div class="hidden-alert min_val" data-for="password" style="visibility: hidden; display: none;">Password must be at least 8 symbols long, containing digits and letters</div>
+
+                <input name="password2" type="password" required="required" placeholder="Repeat password">
+                <div class="hidden-alert not_equals" data-for="password2" style="visibility: hidden; display: none;">Passwords do not match</div>
+
+
+
+                <div class="hidden-alert does_not_exist" data-for="ref_code" style="visibility: hidden; display: none;">Referral ID does not exist</div>
+
+
+                <input name="is_subscribed" value="y" type="hidden" checked="true">
+
+                <div class="recaptcha" data-force="true" style="margin-top: 20px;">
+                    <div style="width: 304px; height: 78px;">
+                        <div>
+                            <iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcWKD0UAAAAALLZHrZB5mTQwebvjKS4bKlNYtoe&amp;co=aHR0cHM6Ly93d3cudGhlYWJ5c3MuY29tOjQ0Mw..&amp;hl=en&amp;v=v1525674693836&amp;theme=light&amp;size=normal&amp;cb=f3971gb90a0t"
+                                width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                        </div>
+                        <textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea>
+                    </div>
+                </div>
+
+                <div class="hidden-alert already_exists" style="visibility: hidden; display: none;">
+                    You are registered already, please confirm registration via email or
+                    <a href="#" class="modal-opener-btn" data-target="login-modal">Log In</a>
+                </div>
+                <div class="hidden-alert connection_lost" style="visibility: hidden; display: none;">Connection lost</div>
+                <div class="hidden-alert csrf_error" data-for="general" style="visibility: hidden; display: none;">The CSRF token is missing or incorrect.</div>
+                <div class="hidden-alert xhr_required" data-for="general" style="visibility: hidden; display: none;">Incorrect XHR request.</div>
+                <div class="hidden-alert" data-for="default" style="visibility: hidden; display: none;">Something went wrong, please try again later</div>
+
+                <input name="csrf_token" value="IjkyYzc1MGU2NjhkNWY0YjA3YzBmMWQzYWQzMjJlNzYxN2M1NzY2OTgi.DdqCAw.jkTo6KhEdLF3fScHFrykf8dQ_Yw"
+                    type="hidden">
+
+                <div id="register-agree" action="">
+                    <label class="check">
+                        <input type="checkbox" class="check">
+                        <span class="checkmark"></span>
+                        I agree with
+                        <a href="https://theabyss.docsend.com/view/xksf67v" target="_blank">Privacy Policy</a>
+                    </label>
+
+                    <button>Create an account</button>
+                </div>
+            </form>
+
+            <div class="text">
+                Already have an account?
+                <a href="#" class="modal-opener-btn" data-target="login-modal">Log In</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- passwd reset -->
+    <div id="password-reset-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Forgot your password?</div>
+            <div class="text">Enter your email</div>
+            <form action="/api/user/password/reset" method="post" class="password-reset-form">
+                <input type="email" name="email" placeholder="email@example.com">
+                <div class="hidden-alert does_not_exist" data-for="email" style="visibility: hidden; display: none;">User with this e-mail doesn't exist</div>
+                <input name="csrf_token" value="IjkyYzc1MGU2NjhkNWY0YjA3YzBmMWQzYWQzMjJlNzYxN2M1NzY2OTgi.DdqCAw.jkTo6KhEdLF3fScHFrykf8dQ_Yw"
+                    type="hidden">
+                <div class="recaptcha" style="margin-top: 20px;"></div>
+                <div class="hidden-alert connection_lost" style="visibility: hidden; display: none;">Connection lost</div>
+                <div class="hidden-alert" data-for="default" style="visibility: hidden; display: none;">Something went wrong, please try again later</div>
+
+                <button>reset my password</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- password restore -->
+    <div id="password-restore-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Password restoration</div>
+            <form action="" method="POST" class="password-restore-form">
+                <input name="password" type="password" required="required" placeholder="Create password (min 8 characters)">
+                <div class="hidden-alert weak_password" data-for="password" style="visibility: hidden; display: none;">Password must be at least 8 symbols long, containing digits and letters</div>
+
+                <input name="password2" type="password" required="required" placeholder="Repeat password">
+                <div class="hidden-alert not_equals" data-for="password2" style="visibility: hidden; display: none;">Passwords do not match</div>
+
+                <div class="hidden-alert connection_lost" style="visibility: hidden; display: none;">Connection lost</div>
+                <div class="hidden-alert invalid_link" data-for="default" style="visibility: hidden; display: none;">Sorry, password reset link cannot be used twice</div>
+                <div class="hidden-alert" data-for="default" style="visibility: hidden; display: none;">Something went wrong, please try again later</div>
+
+                <input name="csrf_token" value="IjkyYzc1MGU2NjhkNWY0YjA3YzBmMWQzYWQzMjJlNzYxN2M1NzY2OTgi.DdqCAw.jkTo6KhEdLF3fScHFrykf8dQ_Yw"
+                    type="hidden">
+                <button>Restore password</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- two-factor auth -->
+    <div id="two-factor-auth-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Two-factor authentification</div>
+            <div class="text">Enter code from app</div>
+            <form action="/api/user/login/totp" class="2fa-login-form" method="POST">
+                <input type="password" name="token" placeholder="Your code">
+                <div class="hidden-alert" style="visibility: hidden; display: none;">Password must be at least 8 symbols long, containing digits and letters</div>
+                <div class="hidden-alert data_required" style="visibility: hidden; display: none;">Empty token</div>
+                <div class="hidden-alert invalid_token" style="visibility: hidden; display: none;">Code is invalid or expired</div>
+                <div class="hidden-alert connection_lost" style="visibility: hidden; display: none;">Connection lost</div>
+                <div class="hidden-alert" data-for="default" style="visibility: hidden; display: none;">Something went wrong, please try again later</div>
+                <input name="csrf_token" value="IjkyYzc1MGU2NjhkNWY0YjA3YzBmMWQzYWQzMjJlNzYxN2M1NzY2OTgi.DdqCAw.jkTo6KhEdLF3fScHFrykf8dQ_Yw"
+                    type="hidden">
+                <button>login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- message modal -->
+    <div id="message-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Thank you!</div>
+            <div class="text registration_confirmed">Confirmation email has been sent. Please check your email and follow instructions.</div>
+            <div class="text password_reset_email_sent">Password reset email has been sent. Please check your email and follow instructions.</div>
+            <div class="text support_sent">Thanks for contacting us. We will respond to your message shortly.</div>
+            <div class="text password_reset">
+                Your password has been reset. Please
+                <a href="#" class="modal-opener-btn" data-target="login-modal">Log In</a> using your new password
+            </div>
+            <form action="">
+                <a href="https://telegram.theabyss.com" target="_blank" class="close-modal telegram-button">JOIN US ON TELEGRAM</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Error modal -->
+    <div id="reg-confirm-err-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="text">Link is invalid. Try to login</div>
+        </div>
+    </div>
+
+    <!-- maintenance modal -->
+    <div id="maintenance-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Sorry!</div>
+            <div class="text ">We are making our site better, it may take several minutes to finish maintenance works, please stay tuned.</div>
+
+            <form action="">
+                <a href="https://telegram.theabyss.com" target="_blank" class="close-modal telegram-button">JOIN US ON TELEGRAM</a>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- contract address -->
+    <div id="contract-modal" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Attention!</div>
+            <div class="text" style="font-size: 18px">This page is for informational purpose only</div>
+            <div class="text" style="font-size: 18px">
+                <strong>For contributing access your
+
+
+                    <a class="modal-opener-btn" data-target="register-modal" href="#">
+                        dashboard
+                    </a>
+
+
+                </strong>
+            </div>
+            <div class="text attention">THIS CONTRACT IS NOT FOR CONTRIBUTING
+                <br>ONLY FOR STORING RAISED ETH
+                <br>
+                <br>DON'T SEND ETH THERE OR YOU WILL LOOSE THEM!</div>
+            <form action="">
+                <a href="https://etherscan.io/address/0x49db6ee4507132d1fdac92318e0e6150bf786728#internaltx" target="_blank" class="close-modal btn">I UNDERSTAND</a>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- contract address -->
+    <div id="contract-modal-bnb" class="lk-modal modal-dialog">
+        <div class="modal-content">
+            <span class="close close-modal">×</span>
+            <div class="modal-title">Attention!</div>
+            <div class="text" style="font-size: 18px">This page is for informational purpose only</div>
+            <div class="text" style="font-size: 18px">
+                <strong>For contributing access your
+
+
+                    <a class="modal-opener-btn" data-target="register-modal" href="#">
+                        dashboard
+                    </a>
+
+
+                </strong>
+            </div>
+            <div class="text attention">THIS CONTRACT IS NOT FOR CONTRIBUTING
+                <br>ONLY FOR STORING RAISED BNB
+                <br>
+                <br>DON'T SEND BNB THERE OR YOU WILL LOOSE THEM!</div>
+            <form action="">
+                <a href="https://etherscan.io/address/0xb84e224216fec19d8631a0ad187326bc48f91b6b#tokentxns" target="_blank" class="close-modal btn">I UNDERSTAND</a>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.theabyss.com/static/js/vendor/jquery-3.2.1.min.js?20171120T171452"></script>
+    <script src="https://cdn.theabyss.com/static/js/vendor/jquery.form.min.js?20171120T171452"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://cdn.theabyss.com/static/js/ico.js?20180429T020328"></script>
+    <script src="https://www.google.com/recaptcha/api.js?hl=en&amp;onload=onRecaptchaLoad&amp;render=explicit"></script>
+    <script src="https://cdn.theabyss.com/static/js/script.js?20180511T184625"></script>
+    <script src="https://cdn.theabyss.com/static/js/daico.js?20180511T184625"></script>
+
+    <div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div>
+        <div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div>
+        <div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div>
+        <div style="z-index: 2000000000; position: relative;">
+            <iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=v1525674693836&amp;k=6LcWKD0UAAAAALLZHrZB5mTQwebvjKS4bKlNYtoe&amp;cb=s26ss3uty2nx#cuknr85tskf8"
+                frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                name="cuknr85tskf8" style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+    <div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;">
+        <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div>
+        <div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div>
+        <div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div>
+        <div style="z-index: 2000000000; position: relative;">
+            <iframe title="recaptcha challenge" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=v1525674693836&amp;k=6LcWKD0UAAAAALLZHrZB5mTQwebvjKS4bKlNYtoe&amp;cb=7yaz0a2sr1ml#6bh023ojqqkj"
+                frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+                name="6bh023ojqqkj" style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+</body>
